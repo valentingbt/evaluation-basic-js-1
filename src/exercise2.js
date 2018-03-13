@@ -10,9 +10,9 @@ var mapCustomer = function(customer) {
   else{
     var sum = 0;
     for (var i = 0; i < customer.products.length; i++) {
-    customer.products[i].price += sum;
+      sum += customer.products[i].price;
     };
-    
+
     customer.moneySpent = sum;
     ;
   }
